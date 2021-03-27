@@ -1,0 +1,15 @@
+tables: 
+	Users {uid,uname}
+	cab	{cid,dname}
+	booking {bid , uid ,cid, date,time ,from ,to where}
+	
+	
+	user 1 : M bookings
+
+	cab 1 : M bookings
+
+
+	user.hasMany(bookings)
+	cab.hasMany(bookings)
+
+
